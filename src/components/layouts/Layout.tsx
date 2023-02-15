@@ -1,9 +1,12 @@
+import { FC } from 'react'
 import Head from "next/head";
 
 interface Props{
-  title?: string;
+  title?:string;
   pokemonName?:string;
+  children?:JSX.Element;
 }
+
 
 export const Layout: FC<Props> = ({children, title, pokemonName}) => {
   return(
@@ -23,3 +26,4 @@ export const Layout: FC<Props> = ({children, title, pokemonName}) => {
     </>
   )
 };
+ 
